@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>王江铭的个人主页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/Reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/chat.css">
+    <script type="text/javascript" src="http://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+        $webfont.load("body,h1", "32fb3807963644a78ba26c939ed2d4a9", "cyjianxk");
+        /*$webfont.load("#id1,.class1,h1", "32fb3807963644a78ba26c939ed2d4a9", "cyjianxk");*/
+        /*．．．*/
+        $webfont.draw();
+    </script>
+</head>
+<body>
+<!--背景轮播图-->
+<div id="slider" >
+    <a href="#"><img src="./img/bg2.jpg"/></a>
+    <a href="#"><img src="./img/bg3.jpeg"/></a>
+    <a href="#"><img src="./img/bg4.jpg"/></a>
+    <a href="#"><img src="./img/bg1.jpg"/></a>
+</div>
+
+<div class="container" style="display: none">
+    <div class="main">
+        <h1>联系方式</h1>
+        <div class="chat">
+            <h3><img src="./img/qq.png" alt="">:1123093510</h3>
+            <h3><img src="./img/weixin.png" alt="">:1123093510</h3>
+            <h3><img src="./img/github.png" alt="">: <a href="https://github.com/kevinqijie">https://github.com/kevinqijie</a> </h3>
+        </div>
+        <p>本站所有图片字体均来自网络,侵权必删</p>
+        <div class="nav">
+            <span class="toP"><a href="./project.html">项目介绍</a></span>
+            <span class="toSg"><a href="./past.html">时光漫步</a></span>
+            <span class="toMe"><a href="./index.html">首页</a></span>
+        </div>
+    </div>
+</div>
+
+<!--网易云播放器-->
+
+<div class="aduiobox">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=2816165010&auto=1&height=430"></iframe>
+</div>
+<script src="./js/vmc.slider.full.min.js"></script>
+<script>
+    $(function() {
+        let clinetH = $(window).height()
+        let clinetW = $(window).width()
+        $(".vui-slider").hide()
+        $('#slider').vmcSlider({
+            width:clinetW,
+            height:clinetH,
+            gridCol: 10,
+            gridRow: 5,
+            gridVertical: 20,
+            gridHorizontal: 10,
+            autoPlay: true,
+            ascending: true,
+            effects: [
+                'fade', 'fadeLeft', 'fadeRight', 'fadeTop', 'fadeBottom', 'fadeTopLeft', 'fadeBottomRight',
+                'blindsLeft', 'blindsRight', 'blindsTop', 'blindsBottom', 'blindsTopLeft', 'blindsBottomRight',
+                'curtainLeft', 'curtainRight', 'interlaceLeft', 'interlaceRight', 'mosaic', 'bomb', 'fumes'
+            ],
+            ie6Tidy: false,
+            random: false,
+            duration: 4000,
+            speed: 3000
+        });
+        $(".vui-slider").show()
+        $(".container").show()
+    });
+</script>
+</body>
+</html>

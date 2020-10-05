@@ -1,0 +1,16 @@
+.main{
+    background: rgba(255,255,255,.8);
+    color: #111 !important;
+}
+.main h1,.main h3{
+    color: #111;
+}
+.chat{
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.chat h3{
+    display: flex;
+    align-items: center;
+}
